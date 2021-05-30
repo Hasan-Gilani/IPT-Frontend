@@ -5,7 +5,7 @@ import {RotateLoader} from "react-spinners";
 
 const QrCode = (props) => {
 
-    const {courseCode} = window.localStorage
+    const {cid} = window.localStorage
 
     const [qrCode, setQrCode] = useState();
     const [loading, setLoading] = useState(true)
@@ -14,7 +14,7 @@ const QrCode = (props) => {
 
     useEffect( () => {
         const fetchQr = async () => {
-            getQrCode(courseCode)
+            getQrCode(cid)
                 .then(qrcode => {
                     setQrCode(qrcode)
                     setLoading(false)
