@@ -19,7 +19,7 @@ const Dashboard = () => {
     const [component, setComponent] = useState();
     const onLogoutClick = () => {
         history.push({
-            pathname: '/'
+            pathname: 'login'
         });
     }
         return (
@@ -34,34 +34,32 @@ const Dashboard = () => {
                     <Container fluid style={{ paddingLeft: 0, paddingRight: 0}}>
                         <Row md={12}>
                             <Col md={1} style={{backgroundColor: "#343a40"}}>
-
                                 <br/>
                                 <br/>
                                 <br/>
                                 <br/>
                                 <br/>
                                 <br/>
-
                                 <br/>
                                 <br/>
                                 <br/>
                                 <br/>
                                 <Row md={4} className="d-flex justify-content-md-center">
-                                    <Col xs={6} md={8} >
-                                        <a href="#"
-                                           onClick={e => {setComponent(<AttendanceTable/>)}}
+                                    <Col xs={6} md={8}>
+                                        <a
+                                            href="#"
+                                            onClick={ e => {setComponent(<QrCode seed={Math.floor(Math.random() * 100)} />)}}
                                         >
-                                            <BsFillPeopleFill size="4em" style={{color: "grey"}}/></a>
+                                            <ImQrcode size="4em" style={{color: "grey"}}/></a>
                                     </Col>
                                 </Row>
-                                <br/>
-                                <br/>
-                                <br/>
-                                <br/>
-                                <br/>
-                                <br/>
 
-
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
                                 <br/>
                                 <br/>
                                 <br/>
