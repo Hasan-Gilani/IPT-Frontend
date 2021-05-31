@@ -36,7 +36,7 @@ class SearchRecord extends Component{
                             </Col>
                         </Form.Group>
                         <Button
-                            type="submit" variant="primary">Login</Button>
+                            type="submit" variant="primary">Search</Button>
                     </Form>
                 </div>
         );
